@@ -4,7 +4,10 @@ import base64  # used for encoding image data
 import json  # used for final output formatting
 import os  # used to navigate through operating system directories (to find the images)
 
+from dotenv import load_dotenv
 from openai import OpenAI  # used for, well, OpenAI
+
+load_dotenv()
 
 image_folder = "images"
 results = {}  # Dictionary to store final results
